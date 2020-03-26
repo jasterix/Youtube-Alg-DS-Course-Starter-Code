@@ -5,7 +5,36 @@
 //   palindrome("Madam") === true
 //   palindrome("love") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+  // questions:
+  // does case matter? Yes
+
+  // reverse string
+  // check if reverse string is equal to original string
+  // const reverse = str;
+  //   .toLowerCase()
+  //   .split("")
+  //   .reverse()
+  //   .join("");
+  // if (str.toLowerCase() === reverse) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+  //  ________________________________________________________
+  //
+  // reduce space complexity by removing variable
+  //  ________________________________________________________
+
+  return (
+    str.toLowerCase() ===
+    str
+      .toLowerCase()
+      .split("")
+      .reverse()
+      .join("")
+  );
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
