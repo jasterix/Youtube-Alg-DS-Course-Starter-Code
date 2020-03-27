@@ -21,19 +21,13 @@ function palindrome(str) {
   // } else {
   //   return false;
   // }
+
   //  ________________________________________________________
   //
   // reduce space complexity by removing variable
   //  ________________________________________________________
 
-  return (
-    str.toLowerCase() ===
-    str
-      .toLowerCase()
-      .split("")
-      .reverse()
-      .join("")
-  );
+  return str.toLowerCase()=== str.toLowerCase().split("").reverse().join("")
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______

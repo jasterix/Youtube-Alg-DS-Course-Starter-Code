@@ -7,7 +7,25 @@
 //   reverseInt(-13) === -31
 //   reverseInt(-100) === -1
 
-function reverseInt(n) {}
+function reverseInt(n) {
+  // questions
+  //    positive or numbers?
+  // convert integer to a String
+  // convert string to an array
+  // reverse array
+  reversed = n
+    .toString()
+    .split("")
+    .reverse()
+    .join("");
+
+  console.log(n);
+  if (n > 0) {
+    return parseInt(reversed);
+  } else {
+    return parseInt(reversed) * -1;
+  }
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
