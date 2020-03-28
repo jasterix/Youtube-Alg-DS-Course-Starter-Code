@@ -3,8 +3,25 @@
 // maxChar("I loveeeeeee noodles") === "e"
 // maxChar("1337") === "3"
 
-function maxChar(str) {}
+function maxChar(str) {
+  // create tally for each letter
+  // compare tally against length of String
+  let tally = {};
+  let maxChar = "";
+  let maxCount = 0;
 
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    tally[char] = tally[char] + 1 || 1;
+    console.log(tally);
+
+    if (tally[char] > maxCount) {
+      maxChar = char;
+      maxCount = tally[char];
+    }
+  }
+  return maxChar;
+}
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
 //    ) (   | (    \/| (    \/   ) (     | (    \/| (   ) || (    \/| (    \/| (    \/
