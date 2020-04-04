@@ -13,7 +13,7 @@ function maxChar(str) {
   for (let i = 0; i < str.length; i++) {
     let char = str[i];
     tally[char] = tally[char] + 1 || 1;
-    console.log(tally);
+    // console.log(tally);
 
     if (tally[char] > maxCount) {
       maxChar = char;
